@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Blog Index"
+date:   2017-09-20 20:25:59 -0400
+categories: blog index
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
